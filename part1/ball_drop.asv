@@ -1,14 +1,17 @@
 function [results] = ball_drop(s, w, e, N, P)
     start_y = 99;
+    
     game_board = zeros(99, 99);
     
     for ball_index = 1:N
 
-        if P == "rand"
-            start_x = randi([1, 99]);
-        elseif P == "1"
-            start_x = 50;
-        end
+        
+
+%         if P == "rand"
+%             start_x = randi([1, 99]);
+%         elseif P == 1
+%             start_x = 50;
+%         end
 
         current_x = start_x;
         current_y = start_y;
