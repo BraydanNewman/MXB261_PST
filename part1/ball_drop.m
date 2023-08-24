@@ -1,17 +1,19 @@
 function [results] = ball_drop(s, w, e, N, P)
-    start_y = 99;
-    game_board = zeros(99, 99);
+    board_height = 99;
+    board_width = 99;
+
+    game_board = zeros(board_height, board_width);
     
     for ball_index = 1:N
 
         if P == "rand"
-            start_x = randi([1, 99]);
+            start_x = randi([1, board_width]);
         elseif P == "1"
-            start_x = 50;
+            start_x = (board_width + 1) / 2;
         end
 
         current_x = start_x;
-        current_y = start_y;
+        current_y = board_height;
     
         next_x = current_x;
         next_y = current_y;
@@ -24,7 +26,7 @@ function [results] = ball_drop(s, w, e, N, P)
     %             LEFT    
                 temp = current_x - 1;
                 if temp < 1
-                    temp = 99;
+                    temp = board_width;
                 end
     
                 if game_board(temp, current_y) ~= 1
@@ -33,7 +35,7 @@ function [results] = ball_drop(s, w, e, N, P)
             elseif u < w + e
     %             RIGHT
                 temp = current_x + 1;
-                if temp > 99
+                if temp > board_width
                     temp = 1;
                 end
     
@@ -53,8 +55,8 @@ function [results] = ball_drop(s, w, e, N, P)
         end
     end
 
-    results = zeros(1, 99);
-    for i = 1:99
+    results = zeros(1, board_width);
+    for i = 1:board_width
         results(i) = sum(game_board(i,:));
     end
 
