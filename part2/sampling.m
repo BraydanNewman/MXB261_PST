@@ -31,5 +31,4 @@ function [KLD1, KLD2, X, b, X1,b1] = sampling(bin, N)
     for i = 1:bin
         KLD2 = KLD2 + b1(i) * log(b1(i)/b(i));
     end
-    
 end

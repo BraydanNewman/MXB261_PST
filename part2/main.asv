@@ -10,13 +10,13 @@ subplot(1, 2, 1)
 bar(X, b)
 ylabel('Probability')
 xlabel('Bins')
-title('Given Data Probability Distribution')
+title('Given Data')
 
 subplot(1, 2, 2)
 bar(X1, b1)
 ylabel('Probability')
 xlabel('Bins')
-title('Sampled Data Probability Distribution')
+title('Sampled Data')
 
 sgtitle(["Sampling from Experimental Data", "Bins = 20, Samples = 1000"])
 
@@ -60,6 +60,6 @@ subplot(1, 2, 2)
 bar(X1, b1)
 ylabel('Probability')
 xlabel('Bins')
-title('Sampled Data Probability Distribution')
+title('Sampled Data')
 
 sgtitle(["Sampling from Experimental Data", "Bins = 20, Samples = 1000"])
