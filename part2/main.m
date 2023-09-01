@@ -8,17 +8,17 @@ KLD2
 
 subplot(1, 2, 1)
 bar(X, b)
-ylabel('Probability')
-xlabel('Bins')
-title('Given Data Probability Distribution')
+ylabel('Probability', 'FontSize', 20)
+xlabel('Bins', 'FontSize', 20)
+title('Given Data Probability Distribution', 'FontSize', 20)
 
 subplot(1, 2, 2)
 bar(X1, b1)
-ylabel('Probability')
-xlabel('Bins')
-title('Sampled Data Probability Distribution')
+ylabel('Probability', 'FontSize', 20)
+xlabel('Bins', 'FontSize', 20)
+title('Sampled Data Probability Distribution', 'FontSize', 20)
 
-sgtitle(["Sampling from Experimental Data", "Bins = 20, Samples = 1000"])
+sgtitle(["Sampling from Experimental Data", "Bins = 20, Samples = 1000"], 'FontSize', 25)
 
 %% PLot 2
 bins = 10;
@@ -30,17 +30,17 @@ KLD2
 
 subplot(1, 2, 1)
 bar(X, b)
-ylabel('Probability')
-xlabel('Bins')
-title('Given Data Probability Distribution')
+ylabel('Probability', 'FontSize', 20)
+xlabel('Bins', 'FontSize', 20)
+title('Given Data Probability Distribution', 'FontSize', 20)
 
 subplot(1, 2, 2)
 bar(X1, b1)
-ylabel('Probability')
-xlabel('Bins')
-title('Sampled Data Probability Distribution')
+ylabel('Probability', 'FontSize', 20)
+xlabel('Bins', 'FontSize', 20)
+title('Sampled Data Probability Distribution', 'FontSize', 20)
 
-sgtitle(["Sampling from Experimental Data", "Bins = 10, Samples = 1000"])
+sgtitle(["Sampling from Experimental Data", "Bins = 10, Samples = 1000"], 'FontSize', 25)
 
 %% Plot 3
 bins = 40;
@@ -52,14 +52,14 @@ KLD2
 
 subplot(1, 2, 1)
 bar(X, b)
-ylabel('Probability')
-xlabel('Bins')
-title('Given Data Probability Distribution')
+ylabel('Probability', 'FontSize', 20)
+xlabel('Bins', 'FontSize', 20)
+title('Given Data Probability Distribution', 'FontSize', 20)
 
 subplot(1, 2, 2)
 bar(X1, b1)
-ylabel('Probability')
-xlabel('Bins')
-title('Sampled Data Probability Distribution')
+ylabel('Probability', 'FontSize', 20)
+xlabel('Bins', 'FontSize', 20)
+title('Sampled Data Probability Distribution', 'FontSize', 20)
 
-sgtitle(["Sampling from Experimental Data", "Bins = 20, Samples = 1000"])
+sgtitle(["Sampling from Experimental Data", "Bins = 20, Samples = 1000"], 'FontSize', 25)
